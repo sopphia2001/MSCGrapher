@@ -2,7 +2,7 @@
 
 ## Usage
 
-- Train and evaluate MSGNet
+- Train and evaluate MSCGrapher
   - You can use the following command:`sh ./scripts/ETTh1.sh`.
 
 - Train your model
@@ -14,11 +14,11 @@
 
 ## Model
 
-The main components of MSCGrapher: Embedding layer, Multi-scale causal learning module, Multi-head attention layer, Multi-scale aggregation layer, and Projection layer. Embedding layer maps the raw time series into a high-dimensional representation, which facilitates model input. Multi-scale causal learning module divides the time series into different time scales and learns the causal relationships between series. Multi-head attention layer captures temporal correlations within series. Finally, Multi-scale aggregation layer and Projection layer integrate information from different scales to produce the final prediction.
+The main components of MSCGrapher: Embedding layer, Multi-scale correlation learning block, Multi-head attention layer, Multi-scale aggregation layer, and Projection layer. Embedding layer maps the raw time series into a high-dimensional representation, which facilitates model input. Multi-scale correlation learning module divides the time series into different time scales and learns the correlation relationships between series. Multi-head attention layer captures temporal correlations within series. Finally, Multi-scale aggregation layer and Projection layer integrate information from different scales to produce the final prediction.
 
 ## Note
 
-MSCGrapher is modified from MSGNet, which is the source code of the AAAI'2024 Paper [MSGNet: Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting](https://arxiv.org/abs/2401.00423). We mainly add a causal learning method to adaptively learn the changes in inter-series causal relationships within each time scale.
+MSCGrapher is modified from MSGNet, which is the source code of the AAAI'2024 Paper [MSGNet: Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting](https://arxiv.org/abs/2401.00423). 
 
 ## Acknowledgement
 
